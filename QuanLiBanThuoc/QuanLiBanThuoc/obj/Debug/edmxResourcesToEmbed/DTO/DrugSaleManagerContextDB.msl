@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DrugSalesManagerModelStoreContainer" CdmEntityContainer="DrugSalesManagerEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="ID_Account" ColumnName="ID_Account" />
+          <ScalarProperty Name="Code_Account" ColumnName="Code_Account" />
+          <ScalarProperty Name="DisplayName_Account" ColumnName="DisplayName_Account" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PassWord_Account" ColumnName="PassWord_Account" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="ID_Customer" ColumnName="ID_Customer" />
+          <ScalarProperty Name="Code_Customer" ColumnName="Code_Customer" />
+          <ScalarProperty Name="Name_Customer" ColumnName="Name_Customer" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address_Customer" ColumnName="Address_Customer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="ID_Invoice" ColumnName="ID_Invoice" />
+          <ScalarProperty Name="Code_Invoice" ColumnName="Code_Invoice" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="ID_Account" ColumnName="ID_Account" />
+          <ScalarProperty Name="ID_Customer" ColumnName="ID_Customer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceDetails">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.InvoiceDetail">
+        <MappingFragment StoreEntitySet="InvoiceDetails">
+          <ScalarProperty Name="ID_InvoiceDetails" ColumnName="ID_InvoiceDetails" />
+          <ScalarProperty Name="Code_InvoiceDetails" ColumnName="Code_InvoiceDetails" />
+          <ScalarProperty Name="ID_Medicine" ColumnName="ID_Medicine" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Bill_Status" ColumnName="Bill_Status" />
+          <ScalarProperty Name="Sale_Pirce" ColumnName="Sale_Pirce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Medicine">
+        <MappingFragment StoreEntitySet="Medicine">
+          <ScalarProperty Name="ID_Medicine" ColumnName="ID_Medicine" />
+          <ScalarProperty Name="Name_Medicine" ColumnName="Name_Medicine" />
+          <ScalarProperty Name="Code_MEdicine" ColumnName="Code_MEdicine" />
+          <ScalarProperty Name="Exprired_Day" ColumnName="Exprired_Day" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ID_Unit" ColumnName="ID_Unit" />
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+          <ScalarProperty Name="Import_Price" ColumnName="Import_Price" />
+          <ScalarProperty Name="Sale_Price" ColumnName="Sale_Price" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receipts">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Receipt">
+        <MappingFragment StoreEntitySet="Receipt">
+          <ScalarProperty Name="ID_Receipt" ColumnName="ID_Receipt" />
+          <ScalarProperty Name="Code_Reciept" ColumnName="Code_Reciept" />
+          <ScalarProperty Name="CreateDay" ColumnName="CreateDay" />
+          <ScalarProperty Name="ID_Account" ColumnName="ID_Account" />
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReceiptDetails">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.ReceiptDetail">
+        <MappingFragment StoreEntitySet="ReceiptDetails">
+          <ScalarProperty Name="ID_ReceiptDetails" ColumnName="ID_ReceiptDetails" />
+          <ScalarProperty Name="Code_ReceiptDetails" ColumnName="Code_ReceiptDetails" />
+          <ScalarProperty Name="ID_Medicine" ColumnName="ID_Medicine" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Bill_Status" ColumnName="Bill_Status" />
+          <ScalarProperty Name="Import_Pirce" ColumnName="Import_Pirce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+          <ScalarProperty Name="Name_Supplier" ColumnName="Name_Supplier" />
+          <ScalarProperty Name="Code_Supplier" ColumnName="Code_Supplier" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address_Supplier" ColumnName="Address_Supplier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Units">
+      <EntityTypeMapping TypeName="DrugSalesManagerModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="id_Unit" ColumnName="id_Unit" />
+          <ScalarProperty Name="Code_Unit" ColumnName="Code_Unit" />
+          <ScalarProperty Name="Name_Unit" ColumnName="Name_Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

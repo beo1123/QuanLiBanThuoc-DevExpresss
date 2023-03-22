@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C71F11C-6813-48A0-A2D4-5736484D3BB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLiBanThuoc</RootNamespace>
+    <AssemblyName>QuanLiBanThuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\InvoiceDAO.cs" />
+    <Compile Include="DAO\MedicineDAO.cs" />
+    <Compile Include="DAO\ReceiptDAO.cs" />
+    <Compile Include="DAO\StaffDAO.cs" />
+    <Compile Include="DAO\SupplierDAO.cs" />
+    <Compile Include="DAO\UnitDAO.cs" />
+    <Compile Include="DTO\Account.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Customer.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DrugSalesManagerContextDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugSalesManagerContextDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DrugSalesManagerContextDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DrugSalesManagerContextDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugSalesManagerContextDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Invoice.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\InvoiceDetail.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Medicine.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Receipt.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ReceiptDetail.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\sp_helpdiagrams_Result.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Supplier.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\sysdiagram.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Unit.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\USP_Login_Result.cs">
+      <DependentUpon>DrugSalesManagerContextDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fCustomer.Designer.cs">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fInvoice.Designer.cs">
+      <DependentUpon>fInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMedicine.Designer.cs">
+      <DependentUpon>fMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fReciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fReciept.Designer.cs">
+      <DependentUpon>fReciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frptCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frptCustomer.Designer.cs">
+      <DependentUpon>frptCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fRPTInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fRPTInvoice.Designer.cs">
+      <DependentUpon>fRPTInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frptMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frptMedicine.Designer.cs">
+      <DependentUpon>frptMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fRPTReciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fRPTReciept.Designer.cs">
+      <DependentUpon>fRPTReciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frptStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frptStaff.Designer.cs">
+      <DependentUpon>frptStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frptSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frptSuplier.Designer.cs">
+      <DependentUpon>frptSuplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fSatfDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fSatfDetails.Designer.cs">
+      <DependentUpon>fSatfDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fSupplier.Designer.cs">
+      <DependentUpon>fSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fUnit.Designer.cs">
+      <DependentUpon>fUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptCustomer.Designer.cs">
+      <DependentUpon>rptCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptInvoice.Designer.cs">
+      <DependentUpon>rptInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptMedicine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptMedicine.Designer.cs">
+      <DependentUpon>rptMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptReciept.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptReciept.Designer.cs">
+      <DependentUpon>rptReciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptStaff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptStaff.Designer.cs">
+      <DependentUpon>rptStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\rptSuplier.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\rptSuplier.Designer.cs">
+      <DependentUpon>rptSuplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\sttInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\sttInvoice.Designer.cs">
+      <DependentUpon>sttInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncvoiceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\fCustomer.resx">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fInvoice.resx">
+      <DependentUpon>fInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMedicine.resx">
+      <DependentUpon>fMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fReciept.resx">
+      <DependentUpon>fReciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frptCustomer.resx">
+      <DependentUpon>frptCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fRPTInvoice.aa-DJ.resx">
+      <DependentUpon>fRPTInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fRPTInvoice.resx">
+      <DependentUpon>fRPTInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frptMedicine.resx">
+      <DependentUpon>frptMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fRPTReciept.resx">
+      <DependentUpon>fRPTReciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frptStaff.resx">
+      <DependentUpon>frptStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frptSuplier.resx">
+      <DependentUpon>frptSuplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fSatfDetails.resx">
+      <DependentUpon>fSatfDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fSupplier.resx">
+      <DependentUpon>fSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fUnit.resx">
+      <DependentUpon>fUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptCustomer.resx">
+      <DependentUpon>rptCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptInvoice.resx">
+      <DependentUpon>rptInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptMedicine.resx">
+      <DependentUpon>rptMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptReciept.resx">
+      <DependentUpon>rptReciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptStaff.resx">
+      <DependentUpon>rptStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\rptSuplier.resx">
+      <DependentUpon>rptSuplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\sttInvoice.resx">
+      <DependentUpon>sttInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="DTO\DrugSalesManagerContextDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DrugSalesManagerContextDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DTO\DrugSalesManagerContextDB.edmx.diagram">
+      <DependentUpon>DrugSalesManagerContextDB.edmx</DependentUpon>
+    </None>
+    <None Include="IncvoiceDataSet.xsc">
+      <DependentUpon>IncvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IncvoiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncvoiceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IncvoiceDataSet.xss">
+      <DependentUpon>IncvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Account.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Customer.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Invoice.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.InvoiceDetail.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Medicine.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Receipt.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.ReceiptDetail.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Supplier.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.DTO.Unit.datasource" />
+    <None Include="Properties\DataSources\QuanLiBanThuoc.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DTO\DrugSalesManagerContextDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DrugSalesManagerContextDB.edmx</DependentUpon>
+      <LastGenOutput>DrugSalesManagerContextDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DTO\DrugSalesManagerContextDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DrugSalesManagerContextDB.edmx</DependentUpon>
+      <LastGenOutput>DrugSalesManagerContextDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
